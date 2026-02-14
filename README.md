@@ -1,16 +1,123 @@
-# e_commerce
+# Clot – E-Commerce Flutter App
 
-A new Flutter project.
+Clot is a full-featured e-commerce mobile application built using Flutter and Firebase.
+This project was developed as part of my Flutter learning journey, focusing on real-world app architecture, state management, API integration, and Firebase services.
 
-## Getting Started
+## ✨ Features
 
-This project is a starting point for a Flutter application.
+🔐 User Authentication
+- Google Sign-In using Firebase Authentication
 
-A few resources to get you started if this is your first Flutter project:
+🛍️ Product Catalog
+- Dynamic product listing from FakeStoreAPI with offline JSON fallback
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+🛒 Shopping Cart
+- Persistent cart using SharedPreferences
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+❤️ Wishlist / Favorites
+- Save and manage favorite products
+
+👤 User Profile
+- Profile details with image upload support
+
+📂 Categories
+- Category-based product browsing with images
+
+💳 Payment Integration
+- Secure payments using Razorpay
+
+🔔 Notifications
+- Local and push notifications using Awesome Notifications
+
+📱 Responsive UI
+- Material Design with custom theming
+
+🌐 Offline Support
+- Local data fallback when API is unavailable
+
+## 📸 Screenshots
+
+(Add Screenshots)
+
+## 🧰 Technical Stack
+
+- Framework: Flutter (SDK ^3.8.1)
+- Backend: Firebase Authentication & Firestore
+- State Management: Provider
+- API Integration: FakeStoreAPI
+- Local Storage: SharedPreferences
+- Payments: Razorpay Flutter (Testing phase)
+- Notifications: Awesome Notifications
+- Networking: HTTP package
+
+## 📁 Project Structure
+
+```bash
+lib/
+├── models/          # Data models (Product, User, CartItem)
+├── provider/        # State management (Auth, Cart, Favorites, Profile)
+├── repositories/    # Data access layer
+├── screens/         # UI screens (20+ screens)
+├── services/        # Business logic (Auth, API handling)
+├── utils/           # Constants, themes, preferences
+└── widgets/         # Reusable UI components
+```
+
+## 🚀 Getting Started
+
+Prerequisites
+
+- Flutter SDK (>= 3.8.1)
+- Dart SDK
+- Firebase project
+- Android Studio or VS Code
+
+Installation
+
+1. Clone the Repository
+2. Install dependencies:
+```bash
+flutter pub get
+```
+3. Run the app:
+```bash
+flutter run
+```
+
+Firebase Setup
+
+1. Create a project in Firebase Console
+2. Add Android & iOS apps
+3. Download:
+      - google-services.json (Android)
+      - GoogleService-Info.plist (iOS)
+4. Place them in the respective platform folders
+
+## 🎯 Purpose of the Project
+This project was built to practice Flutter development using
+real-world features such as authentication, API integration,
+state management, and payments.
+
+## 🧠 Learning Outcomes
+
+This project helped me gain hands-on experience with:
+
+- Flutter app architecture & clean code practices
+- Provider-based state management
+- REST API integration & offline handling
+- Firebase Authentication & Firestore
+- Payment gateway integration
+- Persistent local storage
+- Real-world UI/UX implementation
+
+## 🏗️ Architecture Overview
+
+- Presentation Layer – Screens & Widgets
+- Business Logic Layer – Providers & Services
+- Data Layer – Repositories & Models
+
+The app follows clean architecture principles to ensure scalability and maintainability.
+
+## 📜 License
+
+This project is licensed under the MIT License.
