@@ -17,7 +17,7 @@ Future<void> main() async {
   kIsWeb
       ? await Firebase.initializeApp(
           options: const FirebaseOptions(
-              apiKey: "AIzaSyA8q4zgim0sG6l01xi90RdQi3irOqZN33o",
+              apiKey: "",
               authDomain: "e-commerce-8da14.firebaseapp.com",
               projectId: "e-commerce-8da14",
               storageBucket: "e-commerce-8da14.firebasestorage.app",
